@@ -23,6 +23,16 @@
             Console.WriteLine(em.GetName());
 
             #endregion
+
+            #region v04
+            employee2 emp = new employee2();
+            emp.Id = 2;
+            emp.Age = 25;
+            emp.Name = "Bilal";
+         
+            Console.WriteLine(emp.ToString());
+            #endregion
+
         }
     }
 }
