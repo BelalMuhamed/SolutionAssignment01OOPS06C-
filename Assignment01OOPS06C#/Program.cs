@@ -2,13 +2,7 @@
 {
     internal class Program
     {
-        struct employee
-        {
-            int id;
-            int salary;
-            string name;
-
-        }
+       
         static void Main(string[] args)
         {
             #region V01
@@ -16,6 +10,17 @@
             Console.WriteLine(point1.ToString());
             Point point2 = new Point(5,6);
             Console.WriteLine(point2.ToString());
+
+            #endregion
+
+            #region v02
+            employee em=new employee();
+            em.SetId(1);
+            em.SetSalary(50000);
+            em.SetName("Bilal");
+            Console.WriteLine(em.GetId());
+            Console.WriteLine(em.GetSalary());
+            Console.WriteLine(em.GetName());
 
             #endregion
         }
