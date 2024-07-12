@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using static Assignment01OOPS06C_.person;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment01OOPS06C_
 {
@@ -53,7 +55,7 @@ namespace Assignment01OOPS06C_
             Console.WriteLine(p.ToString());
             #endregion
 
-            #region part02Q01
+                #region part02Q01
             /*1.	Design and implement a Class for the employees in a company:
             Notes:
             •	Employee is identified by an ID, Name, security level, salary, hire date and Gender.
@@ -63,6 +65,14 @@ namespace Assignment01OOPS06C_
             */
             employee em =new employee(10,"Bilal",security.DBA,35000,new DateTime(2024-10-10),gender.male);
             Console.WriteLine(em.ToString());
+            #endregion
+
+                #region part02Q02
+            /* 2.Develop a Class to represent the Hiring Date Data:
+
+       Consisting of fields to hold the day, month and Years.*/
+            hiringdate dat = new hiringdate(10, 2, 2000);
+            Console.WriteLine(dat.ToString());
             #endregion
         }
 
