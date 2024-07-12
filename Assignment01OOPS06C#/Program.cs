@@ -33,6 +33,18 @@
             Console.WriteLine(emp.ToString());
             #endregion
 
+            #region v05
+            Console.Clear();
+            BookNumber bookNumber = new BookNumber(3);
+            bookNumber.Add(0, "Bilal", 123456);
+            bookNumber.Add(1, "Ibrahim", 1236);
+            bookNumber.Add(2, "yahya", 123);
+
+            Console.WriteLine(bookNumber["Bilal"]);
+            bookNumber["yahya"] = 999;
+            Console.WriteLine(bookNumber["yahya"]);
+           
+            #endregion
         }
     }
 }
