@@ -43,7 +43,16 @@
             Console.WriteLine(bookNumber["Bilal"]);
             bookNumber["yahya"] = 999;
             Console.WriteLine(bookNumber["yahya"]);
-           
+
+            #endregion
+            #region v06
+            Car car = new Car(10, 500, "BMW");
+            Car car1 = new Car(10, 500);
+            Car car2 = new Car(10);
+            Console.WriteLine(car.ToString());
+            Console.WriteLine(car1.ToString());
+            Console.WriteLine(car2.ToString());
+
             #endregion
         }
     }
