@@ -74,6 +74,21 @@ namespace Assignment01OOPS06C_
             hiringdate dat = new hiringdate(10, 2, 2000);
             Console.WriteLine(dat.ToString());
             #endregion
+
+            #region part02Q03
+            /*3.	Create an array of Employees with size three a DBA,
+             * Guest and the third one is security officer who have full permissions. (Employee [] EmpArr;)*/
+            Employee[] EmpArr = new Employee[3];
+
+            EmpArr[0] = new Employee(1, "Alice Johnson", Gender.Female, SecurityLevel.DBA, 90000m, new HiringDate(15, 5, 2018));
+            EmpArr[1] = new Employee(2, "Bob Smith", Gender.Male, SecurityLevel.Guest, 50000m, new HiringDate(10, 3, 2019));
+            EmpArr[2] = new Employee(3, "Carol White", Gender.Female, SecurityLevel.SecurityOfficer, 120000m, new HiringDate(20, 8, 2017));
+
+            foreach (var employee in EmpArr)
+            {
+                Console.WriteLine(employee.ToString());
+            }
+            #endregion
         }
 
     }
