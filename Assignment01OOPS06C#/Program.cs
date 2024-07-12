@@ -75,7 +75,7 @@ namespace Assignment01OOPS06C_
             Console.WriteLine(dat.ToString());
             #endregion
 
-            #region part02Q03
+                #region part02Q03
             /*3.	Create an array of Employees with size three a DBA,
              * Guest and the third one is security officer who have full permissions. (Employee [] EmpArr;)*/
             Employee[] EmpArr = new Employee[3];
@@ -89,6 +89,7 @@ namespace Assignment01OOPS06C_
                 Console.WriteLine(employee.ToString());
             }
             #endregion
+
         }
 
     }
